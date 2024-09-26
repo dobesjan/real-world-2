@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RealWorld.Models.Parameters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,10 @@ namespace RealWorld.Models.People
 		public string PhoneNumber { get; set; }
 
 		public Address Address { get; set; }
+
+		public List<Parameter<int>> Abilities { get; set; }
+
+		public List<Parameter<int>> Needs { get; set; }
 
 		public Person(string firstName, string lastName, string phoneNumber, Address address)
 		{
